@@ -1,0 +1,33 @@
+[debug] [2021-02-17T20:10:59.317Z] ----------------------------------------------------------------------
+[debug] [2021-02-17T20:10:59.320Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Naser\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2021-02-17T20:10:59.321Z] CLI Version:   9.3.0
+[debug] [2021-02-17T20:10:59.321Z] Platform:      win32
+[debug] [2021-02-17T20:10:59.321Z] Node Version:  v14.15.0
+[debug] [2021-02-17T20:10:59.322Z] Time:          Wed Feb 17 2021 15:10:59 GMT-0500 (Eastern Standard Time)
+[debug] [2021-02-17T20:10:59.322Z] ----------------------------------------------------------------------
+[debug] [2021-02-17T20:10:59.322Z] 
+[debug] [2021-02-17T20:10:59.330Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-17T20:10:59.330Z] > authorizing via signed-in user
+[debug] [2021-02-17T20:10:59.331Z] [iam] checking project clone-b0f72 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-17T20:10:59.333Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-17T20:10:59.334Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-17T20:10:59.645Z] <<< HTTP RESPONSE 200 {"date":"Wed, 17 Feb 2021 20:10:24 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-17T20:10:59.655Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-b0f72:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-17T20:11:00.293Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Feb 2021 20:10:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=42","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-17T20:11:00.295Z] > refreshing access token with scopes: []
+[debug] [2021-02-17T20:11:00.295Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-17T20:11:00.539Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 17 Feb 2021 20:10:25 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-17T20:11:00.545Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-b0f72 [none]
+[debug] [2021-02-17T20:11:00.966Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-b0f72 200
+[debug] [2021-02-17T20:11:00.967Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-b0f72 {"projectId":"clone-b0f72","projectNumber":"172547839483","displayName":"Amazon-Clone","name":"projects/clone-b0f72","resources":{"hostingSite":"clone-b0f72","storageBucket":"clone-b0f72.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2021-02-17T20:11:01.176Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:124:11)
+    at Object.join (path.js:375:7)
+    at Object.checkFunctionsSDKVersion [as fn] (C:\Users\Naser\AppData\Roaming\npm\node_modules\firebase-tools\lib\checkFirebaseSDKVersion.js:34:28)
+    at C:\Users\Naser\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
